@@ -1,0 +1,47 @@
+{
+  "name": "svelte-dx-table",
+  "version": "1.0.0-dev.0",
+  "description": "dx friendly svelte table component",
+  "svelte": "src/components/Table.svelte",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "url": "https://github.com/thecodejack/svelte-dx-table"
+  },
+  "author": "thecodejack",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "7.16.7",
+    "@rollup/plugin-commonjs": "18.0.0",
+    "@rollup/plugin-node-resolve": "11.2.1",
+    "@storybook/addon-actions": "6.4.9",
+    "@storybook/addon-links": "6.4.9",
+    "@storybook/addon-notes": "5.3.21",
+    "@storybook/addon-storysource": "6.4.9",
+    "@storybook/addons": "6.4.9",
+    "@storybook/svelte": "^6.4.9",
+    "babel-loader": "8.2.3",
+    "rollup": "2.62.0",
+    "rollup-plugin-svelte": "7.1.0",
+    "svelte": "3.44.3",
+    "svelte-loader": "3.1.2"
+  },
+  "keywords": [
+    "svelte",
+    "svelte3",
+    "svelte-components",
+    "svelte-dx-table",
+    "sveltejs"
+  ],
+  "files": [
+    "src",
+    "dist"
+  ]
+}
