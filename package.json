@@ -1,6 +1,6 @@
 {
   "name": "svelte-dx-table",
-  "version": "1.0.0-dev.0",
+  "version": "1.0.0",
   "description": "dx friendly svelte table component",
   "svelte": "src/components/Table.svelte",
   "module": "dist/index.mjs",
