@@ -44,6 +44,8 @@ If incase, you want to specify order of columns, you can use `keys` prop in whic
 
 [Click here for Storybook link](https://svelte-dx-table.netlify.app/)
 
+Implementation for stories: https://github.com/thecodejack/svelte-dx-table/tree/main/stories/views
+
 ## Installation
 
 ```
