@@ -1,6 +1,9 @@
 import { action } from "@storybook/addon-actions";
-import Table from "../src";
-import data from "./data";
+
+import BasicTable from "./views/BasicTable.svelte";
+import BasicTable1 from "./views/BasicTableWith1ColumnRemoved.svelte";
+import BasicTable2 from "./views/BasicTableWith1ColumnConfigAdded.svelte";
+import AdDXTable1 from "./views/AdvancedImplOfTable.svelte";
 
 import intro from "./../README.md";
 
@@ -12,39 +15,21 @@ export default {
 };
 
 export const Basictable = () => ({
-  Component: Table,
-  props: {
-    data: data,
-  },
+  Component: BasicTable,
+  props: {},
 });
 
 export const BasictableWith1ColumnIgnoredFromKeys = () => ({
-  Component: Table,
-  props: {
-    data: data,
-    ignoreKeys: ["dob"],
-  },
+  Component: BasicTable1,
+  props: {},
 });
 
 export const BasictableWith1ColumnConfigAdded = () => ({
-  Component: Table,
-  props: {
-    data: data,
-    columns: {
-      dob: {
-        key: "dob",
-        formatter: (val) => {
-          return new Intl.DateTimeFormat("en-US").format(new Date(val));
-        },
-      },
-    },
-  },
+  Component: BasicTable2,
+  props: {},
 });
 
-export const TableWithConfiguredKeys = () => ({
-  Component: Table,
-  props: {
-    data: data,
-    keys: ["name", "gender", "age", "email"],
-  },
+export const AdvancedImplementationOfDxTable = () => ({
+  Component: AdDXTable1,
+  props: {},
 });
